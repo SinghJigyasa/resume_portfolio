@@ -1,25 +1,26 @@
 {
-  "name": "resume-portfolio",
-  "version": "1.0.0",
-  "scripts": {
-  "start": "parcel public/index.html",
-  "build": "parcel build public/index.html"
-},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.26.10",
-    "@babel/preset-react": "^7.26.3",
-    "parcel": "^2.14.4"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^7.0.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-router": "^7.5.3"
-  },
-  "description": ""
+	"name": "resume-portfolio",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "parcel public/index.html",
+		"clean-start": "rm -rf .parcel-cache dist && npm run start",
+		"build": "parcel build public/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.26.10",
+		"@babel/preset-react": "^7.26.3",
+		"parcel": "^2.14.4"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mui/material": "^7.0.2",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-router": "^7.5.3"
+	},
+	"description": ""
 }

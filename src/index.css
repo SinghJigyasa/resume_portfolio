@@ -2,3 +2,7 @@
   margin:0;
   font-family: 'Arial', sans-serif;  
 }
+body{
+  background: #fafafa;
+  background-image: url("../src/assets/images/backGroung.png");
+}
