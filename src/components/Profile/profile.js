@@ -1,7 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import React from "react";
 import "./profile.css";
-import imageIcon from "../../assets/images/profileIcon.jpeg";
+import imageIcon from "../../assets/images/css-3.png";
 const Profile = () => {
 	return (
 		<div className="profile_container">
@@ -10,7 +10,7 @@ const Profile = () => {
 				<Typography className="title">Software Engineer</Typography>
 			</div>
 			<div className="profile_image">
-				<img src={imageIcon} alt=" profile Icon" width={'100px'} />
+				<img src={''} alt=" profile Icon" width={'100px'} />
 			</div>
 			<div className="profile_information">
 				Add TileLine
