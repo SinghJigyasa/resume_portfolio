@@ -5,6 +5,8 @@ import Profile from "./components/Profile/profile";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
 import Portfolio from "./pages/Portfolio/portfolio";
+import Resume from "./pages/Resume/resume";
+import { Route, Routes } from "react-router";
 
 const App = () => {
 	return (
@@ -14,8 +16,12 @@ const App = () => {
 					<Profile />
 				</Grid>
 				<Grid size="grow">
-          <Header />
-          <Portfolio/>
+					<Header />
+					<Routes>
+						<Route path="/" index element={<Resume />} />
+						<Route path="/portfolio" element={<Portfolio />} />
+					</Routes>
+
 					<Footer />
 				</Grid>
 			</Grid>
