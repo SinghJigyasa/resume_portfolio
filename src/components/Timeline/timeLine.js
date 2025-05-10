@@ -6,17 +6,17 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { Typography } from "@mui/material";
-import WorkIcon from "@mui/icons-material/Work";
+import PersonIcon from "@mui/icons-material/Person";
 import "./timeLine.css";
 
-const CustomTimeLine = ({ icon, title, children }) => {
+const CustomTimeLine = ({ ProfileData, title }) => {
   return (
     <Timeline className="timeLine">
       {/* Time Line Header */}
       <TimelineItem className="time_line_header">
         <TimelineSeparator>
           <TimelineDot className="time_line_dot_header">
-            {<WorkIcon />}
+            {<PersonIcon />}
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -26,25 +26,28 @@ const CustomTimeLine = ({ icon, title, children }) => {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-
       {/* Time Line Body */}
-      <TimelineItem>
-        <CustomTimeLineItem />
-        <TimelineContent>
-          <Typography className="TimeLineTextHeader">code</Typography>
-        </TimelineContent>
-      </TimelineItem>
+      {ProfileData &&
+        Object.keys(ProfileData).length &&
+        Object.entries(ProfileData).map(([key, value]) => (
+          <CustomTimeLineItem key={key} keyName={key} value={value} />
+        ))}
     </Timeline>
   );
 };
 
-export const CustomTimeLineItem = ({ icon, title, children }) => {
-  return (
+const CustomTimeLineItem = ({ keyName, value }) => (
+  <TimelineItem className="time_line_body">
     <TimelineSeparator className="time_line_separator_body">
       <TimelineDot variant="outlined" className="time_line_dot_body" />
       <TimelineConnector />
     </TimelineSeparator>
-  );
-};
+    <TimelineContent>
+      <Typography className="TimeLineValueHeader">
+        {keyName}: <span className="TimeLineValue">{value.toString()}</span>
+      </Typography>
+    </TimelineContent>
+  </TimelineItem>
+);
 
 export default CustomTimeLine;

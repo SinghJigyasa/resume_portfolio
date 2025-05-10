@@ -18,12 +18,16 @@
   font-size: 15px;
   color: #777;
 }
+figure{
+  margin: 0;
+  padding: 0;
+}
 .profile_image{
   margin-top: -10px;
   -webkit-clip-path:polygon(0 9%, 100% 0%, 100% 94%, 0 100%);
   clip-path: polygon(0 9%, 100% 0%, 100% 94%, 0 100%);
-
 }
+
 .profile_image img{
-width: 100%;
+width: 90%;
 }

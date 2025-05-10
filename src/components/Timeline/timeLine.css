@@ -1,11 +1,15 @@
 .timeLine {
   padding: 0 !important;
+  margin-top: 0px !important;
+  margin-left: 20px;
 }
 .timeLine .time_line_header {
-  min-height: 80px !important;
+  min-height: 50px !important;
+  margin: 0;
+  padding: 0;
 }
 .timeLine .MuiTimelineItem-root {
-  min-height: 2px;
+  min-height: 10px;
 }
 .timeLine .MuiTimelineItem-missingOppositeContent:before {
   display: none;
@@ -15,14 +19,18 @@
   background-color: var(--main-color);
   font-size: small;
   padding: 10px;
+  margin: -25px 0 1 0;
 }
 .timeLine .time_line_dot_body {
   color: black;
   border-color: var(--main-color) !important;
   padding: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .timeLine .MuiTimelineConnector-root {
   background-color: #eee !important;
+  min-height: 2px;
 }
 .timeLine .time_line_dot_header .MuiSvgIcon-root {
   font-size: 20px;
@@ -30,4 +38,21 @@
 }
 .timeLine .time_line_separator_body {
   padding-left: 18px;
+}
+.timeLine .TimeLineValueHeader {
+  font-size: 14px;
+}
+.timeLine .MuiTypography-root{
+  padding: 0 16px 16px;
+
+}
+.timeLine .TimeLineValue {
+  color: #787878;
+  font-weight: 400px;
+  /* font-size: 14px; */
+}
+.timeLine .time_line_body {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
 }
