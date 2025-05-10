@@ -14,12 +14,12 @@
   color: black;
   background-color: var(--main-color);
   font-size: small;
-  padding: 12px;
+  padding: 10px;
 }
 .timeLine .time_line_dot_body {
   color: black;
   border-color: var(--main-color) !important;
-  padding: 2px;
+  padding: 3px;
 }
 .timeLine .MuiTimelineConnector-root {
   background-color: #eee !important;

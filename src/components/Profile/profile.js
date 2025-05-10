@@ -12,9 +12,9 @@ const Profile = () => {
 				<Typography className="name">Jigyasa Singh</Typography>
 				<Typography className="title">Software Engineer</Typography>
 			</div>
-			<div className="profile_image">
+			<figure className="profile_image">
 				<img src={profileIcon} alt=" profile Icon" />
-			</div>
+			</figure>
 			<div className="profile_information">
 				<CustomTimeLine />
 				<br />

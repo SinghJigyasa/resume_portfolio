@@ -8,6 +8,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { Typography } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import "./timeLine.css";
+
 const CustomTimeLine = ({ icon, title, children }) => {
   return (
     <Timeline className="timeLine">
@@ -40,7 +41,7 @@ const CustomTimeLine = ({ icon, title, children }) => {
 export const CustomTimeLineItem = ({ icon, title, children }) => {
   return (
     <TimelineSeparator className="time_line_separator_body">
-      <TimelineDot className="time_line_dot_body" />
+      <TimelineDot variant="outlined" className="time_line_dot_body" />
       <TimelineConnector />
     </TimelineSeparator>
   );
