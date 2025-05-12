@@ -40,9 +40,9 @@ const CustomTimeLineItem = ({ keyName, value }) => (
   <TimelineItem className="time_line_body">
     <TimelineSeparator className="time_line_separator_body">
       <TimelineDot variant="outlined" className="time_line_dot_body" />
-      <TimelineConnector />
+      <TimelineConnector className="time_line_body_connector" />
     </TimelineSeparator>
-    <TimelineContent>
+    <TimelineContent className="time_line_body_content">
       <Typography className="TimeLineValueHeader">
         {keyName}: <span className="TimeLineValue">{value.toString()}</span>
       </Typography>
