@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router";
 import "./App.css";
 const App = () => {
   return (
-    <Container>
+    <Container className="container_shadow">
       <Grid container>
         <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
           <Profile />

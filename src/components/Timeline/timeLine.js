@@ -11,7 +11,7 @@ import "./timeLine.css";
 
 const CustomTimeLine = ({ ProfileData, title }) => {
   return (
-    <Timeline className="timeLine">
+    <Timeline className="timeLine" style={{ padding: 0 }}>
       {/* Time Line Header */}
       <TimelineItem className="time_line_header">
         <TimelineSeparator>
@@ -44,7 +44,8 @@ const CustomTimeLineItem = ({ keyName, value }) => (
     </TimelineSeparator>
     <TimelineContent className="time_line_body_content">
       <Typography className="TimeLineValueHeader">
-        {keyName}: <span className="TimeLineValue">{value.toString()}</span>
+        <b>{keyName}: </b>
+        <span className="TimeLineValue">{value.toString()}</span>
       </Typography>
     </TimelineContent>
   </TimelineItem>
