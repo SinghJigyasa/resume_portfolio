@@ -1,0 +1,27 @@
+.btn {
+  /* border:0 !im; */
+  size: medium;
+  align-content: end;
+}
+.btn .btn_icon {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 29px !important;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+}
+.btn .btn_text {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn .btn_icon >.MuiSvgIcon-root {
+  font-size: 18px;
+}

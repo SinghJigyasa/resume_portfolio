@@ -2,13 +2,17 @@ import { Button, Typography } from "@mui/material";
 import React from "react";
 import "./profile.css";
 import CustomTimeLine from "../Timeline/timeLine";
-const profileIcon = new URL("../../assets/profileIcon.jpeg", import.meta.url)
-  .href;
+const profileIcon = new URL(
+  "../../assets/images/avtarImage.jpg",
+  import.meta.url
+).href;
 import { ProfileData } from "../../utils/profileData";
+import ButtonComponent from "../Button/button";
+import DownloadIcon from "@mui/icons-material/Download";
 
 const Profile = () => {
   return (
-    <div className="profile_container">
+    <div className="profile_container" style={{ padding: "10px 0 25px 0" }}>
       <div className="profile_header">
         <Typography className="name">Jigyasa Singh</Typography>
         <Typography className="title">Software Engineer</Typography>
@@ -19,7 +23,9 @@ const Profile = () => {
       <div className="profile_information">
         <CustomTimeLine ProfileData={ProfileData} />
         <br />
-        <Button>Download</Button>
+        <div className="btn_container">
+          <ButtonComponent title={"Download Cv"} icon={<DownloadIcon />} />
+        </div>
       </div>
     </div>
   );

@@ -10,12 +10,15 @@ import { Route, Routes } from "react-router";
 import "./App.css";
 const App = () => {
   return (
-    <Container className="container_shadow">
-      <Grid container>
-        <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
+    <Container className="container_top">
+      <Grid container spacing={5}>
+        <Grid
+          size={{ xs: 12, sm: 12, md: 4, lg: 4 }}
+          className="container_shadow"
+        >
           <Profile />
         </Grid>
-        <Grid size="grow">
+        <Grid size="grow" style={{ backgroundColor: "red" }}>
           <Header />
           <Routes>
             <Route path="/" index element={<Resume />} />

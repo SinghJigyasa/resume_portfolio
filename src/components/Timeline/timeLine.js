@@ -45,7 +45,9 @@ const CustomTimeLineItem = ({ keyName, value }) => (
     <TimelineContent className="time_line_body_content">
       <Typography className="TimeLineValueHeader">
         <b>{keyName}: </b>
-        <span className="TimeLineValue">{value.toString()}</span>
+        <span style={{ marginInlineStart: "5px" }} className="TimeLineValue">
+          {value.toString()}
+        </span>
       </Typography>
     </TimelineContent>
   </TimelineItem>
